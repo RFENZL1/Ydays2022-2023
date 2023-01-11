@@ -1,0 +1,158 @@
+body {
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+.cardBox {
+  float: left;
+  font-size: 1.2em;
+  margin: 1% 0 0 1%;
+  perspective: 800px;
+  transition: all 0.4s ease 0s;
+  width: 22%;
+  height: 80%;
+}
+.cardBox:hover .card {
+  transform: rotateY(180deg);
+}
+.card {
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease 0s;
+  width: 100%;
+  height: 100%;
+}
+.card p {
+  margin-bottom: 1.8em;
+}
+.card .front,
+.card .back {
+  backface-visibility: hidden;
+  box-sizing: border-box;
+  color: goldenrod;
+  display: block;
+  font-size: 1.2em;
+  height: 100%;
+  padding: 0.8em 0.7em;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+.front{
+  background-image: url(/image/Dos-de-carte.jpg);
+  background-size: 100%;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  border-color:red, 10px;
+  border:solid;
+  background-repeat: no-repeat;
+}
+.back{
+  border-radius: 10px;
+  border-color:red, 10px;
+  border:solid;
+  background-repeat: no-repeat;
+}
+.card .front strong {
+  background: #fff;
+  border-radius: 100%;
+  font-size: 1.5em;
+  line-height: 30px;
+  padding: 0 7px 4px 6px;
+}
+.card .back {
+  transform: rotateY(180deg);
+  background-size: 100%;
+}
+.card .back a {
+  padding: 0.3em 0.5em;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 1px;
+  font-size: 0.9em;
+  transition: all 0.2s ease 0s;
+}
+.card .back a:hover {
+  background: #fff;
+  text-shadow: 0 0 1px #333;
+}
+.cardBox:nth-child(4) .card .back {
+  background-image: url(https://cdn.futura-sciences.com/buildsv6/images/largeoriginal/1/d/8/1d8a8e8fe1_109430_chouette-hibou-difference.jpg);
+  background-size: 25%;
+  background-repeat: no-repeat;
+}
+.cardBox:nth-child(2) .card {
+  -webkit-animation: giro 1.5s 1;
+  animation: giro 1.5s 1;
+}
+.cardBox:nth-child(3) .card {
+  -webkit-animation: giro 2s 1;
+  animation: giro 2s 1;
+}
+.cardBox:nth-child(4) .card {
+  -webkit-animation: giro 2.5s 1;
+  animation: giro 2.5s 1;
+}
+@-webkit-keyframes giro {
+  from {
+    transform: rotateY(180deg);
+  }
+  to {
+    transform: rotateY(0deg);
+  }
+}
+@keyframes giro {
+  from {
+    transform: rotateY(180deg);
+  }
+  to {
+    transform: rotateY(0deg);
+  }
+}
+@media screen and (max-width: 767px) {
+  .cardBox {
+    margin-left: 2.8%;
+    margin-top: 3%;
+    width: 46%;
+  }
+  /* .card {
+    height: 285px;
+  } */
+  .cardBox:last-child {
+    margin-bottom: 3%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .cardBox {
+    width: 94.5%;
+  }
+  .card {
+    height: 260px;
+  }
+}
+.carte{
+  display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+width: 100vw;
+}
+
+@keyframes progress-bar {
+  0% {
+      transform: scaleX(0);
+  }
+  17% {
+      transform: scaleX(.18);
+  }
+  24% {
+      transform: scaleX(.4);
+  }
+  46% {
+      transform: scaleX(.81);
+  }
+  100% {
+      transform: scaleX(1);
+  }
+}
