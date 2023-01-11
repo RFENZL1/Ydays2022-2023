@@ -2,6 +2,111 @@ body {
   font-weight: normal;
   margin: 0;
   padding: 0;
+  background-color: #0c0319;
+}
+footer{
+  background-color: #DD4B13;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer{
+  font-family: "Quicksland";
+  font-size: 4vh;
+  color: #fff;
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  
+}
+.logo{
+  height: 30%;
+  width: 10%;
+  margin:3%;
+}
+.logo2{
+  height: 30%;
+  width: 10%;
+}
+.instagram{
+  background-image: url(/image/new-Instagram-logo-white-glyph-900x900.png);
+  background-size: 100%;
+  width: 2%;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:3%;
+}
+.newsletter{
+  font-family: "Moalang";
+  font-size: 13vh;
+  color: #fff;
+  margin-left: 10%;
+  margin-top: 13%;
+  height: 10%;
+  margin-bottom: 4%;
+}
+button{
+  font-family: "Quicksland";
+  font-size: 4vh;
+  width: 13%;
+  height: 10vh;
+  border-radius: 50px;
+  background-color: #0c0319;
+  color: #fff;
+}
+.envoyer{
+  display: flex;
+  justify-content: center;
+  margin-top: 4%;
+}
+.prénom{
+  font-family: "Quicksland";
+  font-size: 4vh;
+  background-color: #504596;
+  height: 10vh;
+  width: 35vw;
+  border-radius: 50px;
+  padding-left: 1vw;
+  color: #C9E5E1;
+  border: 0;
+}
+.email{
+  font-family: "Quicksland";
+  font-size: 4vh;
+  background-color: #504596;
+  height: 10vh;
+  width: 35vw;
+  border-radius: 50px;
+  padding-left: 1vw;
+  color:#C9E5E1;
+  border: 0;
+}
+.champ{
+  display: flex;
+  justify-content: space-between;
+  margin-left:10% ;
+  margin-right: 10%;
+}
+.Titres{
+  font-family: "Moalang";
+  font-size: 13vh;
+  color: #fff;
+  text-align: center;
+  margin-top: 5vh;
+}
+.sous-titre{
+  color: red;
+  font-family: "Quicksland";
+  font-size: 4vh;
+  margin: 0;
 }
 .cardBox {
   float: left;
@@ -21,6 +126,28 @@ body {
   transition: transform 0.5s ease 0s;
   width: 100%;
   height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+}
+@font-face {
+	font-family: 'Quicksland';
+	src: url("/polices/Quicksand-VariableFont_wght.ttf")
+}
+  @font-face {
+    font-family: 'Moalang';
+    src: url("/polices/Swistblnk\ Moalang\ Melintang.ttf")
+}
+#card2{
+  border-radius: 10px;
+  border-color:red, 10px;
+  border:solid;
+  background-repeat: no-repeat;
+}
+#pannelId{
+  border-radius: 10px;
+  border-color:red, 10px;
+  border:solid;
+  background-repeat: no-repeat;
 }
 .card p {
   margin-bottom: 1.8em;
@@ -29,7 +156,6 @@ body {
 .card .back {
   backface-visibility: hidden;
   box-sizing: border-box;
-  color: goldenrod;
   display: block;
   font-size: 1.2em;
   height: 100%;
@@ -133,7 +259,7 @@ body {
 }
 .carte{
   display: flex;
-justify-content: center;
+justify-content: space-around;
 align-items: center;
 height: 100vh;
 width: 100vw;
